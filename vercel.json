@@ -4,10 +4,10 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist/session-based-login-fronted" }
+      "config": { "distDir": "dist/session-based-login-fronted/browser" }
     }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
